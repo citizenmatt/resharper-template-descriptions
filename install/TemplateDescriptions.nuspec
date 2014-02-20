@@ -3,18 +3,18 @@
   <metadata>
     <id>TemplateDescriptions</id>
     <title>Live Template description provider</title>
-    <version>1.0.0.1-EAP-20131115</version>
+    <version>1.0.0.1</version>
     <authors>Matt Ellis</authors>
     <owners>Matt Ellis</owners>
     <description>Show Live Template descriptions as tooltips in code completion</description>
-    <releaseNotes>Added support for reShaprer 8.1 (8.1.12.227)</releaseNotes>
+    <releaseNotes>Support for ReShaprer 8.1</releaseNotes>
     <projectUrl>https://github.com/citizenmatt/resharper-template-descriptions</projectUrl>
     <licenseUrl>https://raw.github.com/citizenmatt/resharper-template-descriptions/master/license.txt</licenseUrl>
     <iconUrl>https://raw.github.com/citizenmatt/resharper-template-descriptions/master/icon.png</iconUrl>
     <copyright>Copyright 2013 Matt Ellis</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-      <dependency id="ReSharper" version="8.0" />
+      <dependency id="ReSharper" version="[8.0,8.2)" />
     </dependencies>
     <tags>resharper templates description intellisense codecompletion</tags>
   </metadata>
