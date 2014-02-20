@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using JetBrains.ActionManagement;
 using JetBrains.Application.PluginSupport;
 
 // General Information about an assembly is controlled through the following 

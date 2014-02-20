@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resharper-template-descriptions.8.1", "resharper-template-descriptions\resharper-template-descriptions.8.1.csproj", "{BACAF0E1-01D2-48D4-8DD9-45E5D8C1A2E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resharper-template-descriptions.8.0", "resharper-template-descriptions\resharper-template-descriptions.8.0.csproj", "{F73EF66F-51C1-4EE9-9337-1DDE5271F7B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resharper-template-descriptions.8.2", "resharper-template-descriptions\resharper-template-descriptions.8.2.csproj", "{3D39F027-9062-47A5-AFDC-2C9ADA030BB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{F73EF66F-51C1-4EE9-9337-1DDE5271F7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F73EF66F-51C1-4EE9-9337-1DDE5271F7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F73EF66F-51C1-4EE9-9337-1DDE5271F7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D39F027-9062-47A5-AFDC-2C9ADA030BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D39F027-9062-47A5-AFDC-2C9ADA030BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D39F027-9062-47A5-AFDC-2C9ADA030BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D39F027-9062-47A5-AFDC-2C9ADA030BB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
