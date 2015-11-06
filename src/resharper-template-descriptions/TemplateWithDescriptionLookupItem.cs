@@ -1,5 +1,5 @@
-﻿using JetBrains.ReSharper.Feature.Services.LiveTemplates.Util;
-using JetBrains.ReSharper.Feature.Services.Lookup;
+﻿using JetBrains.ReSharper.Feature.Services.CodeCompletion.Infrastructure.LookupItems;
+using JetBrains.ReSharper.Feature.Services.LiveTemplates.Util;
 using JetBrains.UI.RichText;
 
 namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions

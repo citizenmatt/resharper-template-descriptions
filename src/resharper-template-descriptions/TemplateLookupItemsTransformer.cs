@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using JetBrains.ReSharper.Feature.Services.CodeCompletion.Infrastructure;
+using JetBrains.ReSharper.Feature.Services.CodeCompletion.Infrastructure.LookupItems;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Util;
-using JetBrains.ReSharper.Feature.Services.Lookup;
 using JetBrains.ReSharper.Psi;
 
 namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions
@@ -15,7 +15,7 @@ namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions
             {
                 if (!string.IsNullOrEmpty(templateLookupItem.Template.Description))
                 {
-                    collector.AddAtDefaultPlace(new TemplateWithDescriptionLookupItem(templateLookupItem));
+                    collector.Add(new TemplateWithDescriptionLookupItem(templateLookupItem));
                     collector.Remove(templateLookupItem);
                 }
             }

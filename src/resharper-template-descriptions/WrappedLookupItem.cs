@@ -1,4 +1,7 @@
 ﻿using JetBrains.ProjectModel;
+using JetBrains.ReSharper.Feature.Services.CodeCompletion;
+using JetBrains.ReSharper.Feature.Services.CodeCompletion.Infrastructure.LookupItems;
+using JetBrains.ReSharper.Feature.Services.CodeCompletion.Infrastructure.Match;
 using JetBrains.ReSharper.Feature.Services.Lookup;
 using JetBrains.TextControl;
 using JetBrains.UI.Icons;
@@ -9,7 +12,7 @@ namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions
 {
     public class WrappedLookupItem : IWrappedLookupItem
     {
-        public WrappedLookupItem(ILookupItem innerLookupItem)
+        protected WrappedLookupItem(ILookupItem innerLookupItem)
         {
             Item = innerLookupItem;
         }
@@ -21,9 +24,9 @@ namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions
             return Item.AcceptIfOnlyMatched(itemAcceptanceContext);
         }
 
-        public virtual MatchingResult Match(string prefix, ITextControl textControl)
+        public MatchingResult Match(PrefixMatcher prefixMatcher, ITextControl textControl)
         {
-            return Item.Match(prefix, textControl);
+            return Item.Match(prefixMatcher, textControl);
         }
 
         public virtual void Accept(ITextControl textControl, TextRange nameRange, LookupItemInsertType lookupItemInsertType, Suffix suffix,
@@ -47,6 +50,12 @@ namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions
             Item.Unshrink();
         }
 
+        public LookupItemPlacement Placement
+        {
+            get { return Item.Placement; }
+            set { Item.Placement = value; }
+        }
+
         public virtual IconId Image
         {
             get { return Item.Image; }
@@ -67,15 +76,16 @@ namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions
             get { return Item.CanShrink; }
         }
 
-        public virtual string OrderingString
-        {
-            get { return Item.OrderingString; }
-        }
-
         public virtual int Multiplier
         {
             get { return Item.Multiplier; }
             set { Item.Multiplier = value; }
+        }
+
+        public EvaluationMode Mode
+        {
+            get { return Item.Mode; }
+            set { Item.Mode = value; }
         }
 
         public virtual bool IsDynamic
@@ -89,9 +99,12 @@ namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions
             set { Item.IgnoreSoftOnSpace = value; }
         }
 
-        public virtual string Identity
+        public bool IsStable
         {
-            get { return Item.Identity; }
+            get { return Item.IsStable; }
+            set { Item.IsStable = value; }
         }
+
+        public int Identity { get { return Item.Identity; } }
     }
 }
