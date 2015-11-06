@@ -8,6 +8,6 @@ This plugin adds that tooltip back.
 
 ## How to install?
 
-The plugin supports both ReSharper 8.0 and 8.1. Please install from the Extension Manager.
+Install from ReSharper &rarr; Extension Manager.
 
-Please vote [this issue](http://youtrack.jetbrains.com/issue/RSRP-197743) up to see this implemented natively in ReSharper.
+Please vote [this issue](http://youtrack.jetbrains.com/issue/RSRP-179497) up to see this implemented natively in ReSharper.
