@@ -96,13 +96,6 @@ namespace CitizenMatt.ReSharper.LiveTemplates.Descriptions
         public virtual bool IgnoreSoftOnSpace
         {
             get { return Item.IgnoreSoftOnSpace; }
-            set { Item.IgnoreSoftOnSpace = value; }
-        }
-
-        public bool IsStable
-        {
-            get { return Item.IsStable; }
-            set { Item.IsStable = value; }
         }
 
         public int Identity { get { return Item.Identity; } }

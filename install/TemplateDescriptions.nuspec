@@ -2,19 +2,19 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>CitizenMatt.TemplateDescriptions</id>
-    <title>Live Template description provider (for ReSharper 9)</title>
-    <version>1.1.0</version>
+    <title>Live Template description provider (for ReSharper 10)</title>
+    <version>1.2.0</version>
     <authors>Matt Ellis</authors>
     <owners>Matt Ellis</owners>
     <description>Show Live Template descriptions as tooltips in code completion</description>
-    <releaseNotes>Support for ReShaprer 9.2</releaseNotes>
+    <releaseNotes>Support for ReSharper 10</releaseNotes>
     <projectUrl>https://github.com/citizenmatt/resharper-template-descriptions</projectUrl>
     <licenseUrl>https://raw.github.com/citizenmatt/resharper-template-descriptions/master/license.txt</licenseUrl>
     <iconUrl>https://raw.github.com/citizenmatt/resharper-template-descriptions/master/icon.png</iconUrl>
     <copyright>Copyright 2014-2015 Matt Ellis</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-      <dependency id="Wave" version="[3.0]" />
+      <dependency id="Wave" version="[4.0]" />
     </dependencies>
     <tags>resharper templates description intellisense codecompletion</tags>
   </metadata>
