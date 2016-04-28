@@ -8,8 +8,8 @@
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Matt Ellis")]
 [assembly: AssemblyProduct("resharper-template-descriptions")]
-[assembly: AssemblyCopyright("Copyright © Matt Ellis, 2013")]
+[assembly: AssemblyCopyright("Copyright © Matt Ellis, 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("1.2.0.*")]
+[assembly: AssemblyVersion("1.3.0.0")]
