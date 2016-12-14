@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>CitizenMatt.TemplateDescriptions</id>
-    <title>Live Template description provider (for ReSharper 10)</title>
-    <version>1.3.0</version>
+    <title>Live Template description provider (for ReSharper 2016.2)</title>
+    <version>1.4.0</version>
     <authors>Matt Ellis</authors>
     <owners>Matt Ellis</owners>
     <description>Show Live Template descriptions as tooltips in code completion</description>
